@@ -8,6 +8,8 @@ import { ClickHandler } from './components/ClickHandler';
 import { ParentComponent } from './components/ParentComponent';
 import { NamingList } from './components/NamingList';
 
+import { Form } from './components/Form';
+
 export default function App() {
   var name = 'Mohan';
 
@@ -26,6 +28,8 @@ export default function App() {
       <ParentComponent />
 
       <NamingList />
+
+      <Form/>
     </div>
   );
 }
