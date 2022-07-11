@@ -17,11 +17,10 @@ export default function App() {
     <div>
       <h1>React code-evolution</h1>
       <br />
-      {/* <Greet name={name}/>
-     <Greet name={name} >
-       <p>this is children props</p>
-     </Greet>
-     <Message/> */}
+      <Greet name={name}>
+        <p>this is children props</p>
+      </Greet>
+      <Message />
 
       <ClickHandler />
 
@@ -29,7 +28,7 @@ export default function App() {
 
       <NamingList />
 
-      <Form/>
+      <Form />
     </div>
   );
 }
