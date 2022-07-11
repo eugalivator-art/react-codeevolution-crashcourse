@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "auto": "^10.37.1",
+    "close": "^0.0.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "tag": "^0.4.17"
   },
   "scripts": {
     "start": "react-scripts start",
