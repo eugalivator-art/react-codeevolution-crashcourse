@@ -1,29 +1,25 @@
 import React from 'react';
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 export const PostList = () => {
+  const [posts, setPosts] = useState([]);
 
-  const [posts, setPosts] = useState([])
-
-  useEffect(()=>{
+  useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response => response.json())
-    .then((data) => setPosts(data))
-    .catch((err)=>{
-      console.log(err)
-    })
-  }, [])
+      .then((response) => response.json())
+      .then((data) => setPosts(data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-
-  return(
+  return (
     <div>
       <ul>
-        {
-          posts.map((post) => {
-            return <li>{post.title}</li>
-          })
-        }
+        {posts.map((post) => {
+          return <li>{post.title}</li>;
+        })}
       </ul>
     </div>
-  )
-}
+  );
+};
