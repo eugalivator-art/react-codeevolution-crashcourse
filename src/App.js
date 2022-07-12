@@ -10,6 +10,7 @@ import { NamingList } from './components/NamingList';
 
 import { Form } from './components/Form';
 import { PostList } from './components/PostList';
+import { PostForm } from './components/PostForm';
 
 export default function App() {
   var name = 'Mohan';
@@ -30,6 +31,8 @@ export default function App() {
       <NamingList />
 
       <Form />
+
+      <PostForm />
 
       <PostList />
     </div>
